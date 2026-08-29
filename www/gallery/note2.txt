@@ -1,0 +1,1 @@
+Second gallery item -- no index.html here on purpose, so autoindex kicks in.

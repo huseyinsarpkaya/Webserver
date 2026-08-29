@@ -1,0 +1,5 @@
+Subject example, literally: location /kapouet rooted to /tmp/www means
+/kapouet/pouic/toto/pouet resolves to /tmp/www/pouic/toto/pouet.
+
+Here /tmp/www is ./www/kapouet, so this file lives at exactly the path
+

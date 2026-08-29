@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>webserv</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>webserv</h1>
+<p>Minimal HTTP/1.1 server written in C++98. Test endpoints:</p>
+<ul>
+<li><a href="/kapouet/">/kapouet/</a> &mdash; location with its own <code>root</code></li>
+<li><a href="/gallery/">/gallery/</a> &mdash; <code>autoindex on</code></li>
+<li><a href="/old">/old</a> &mdash; 301 redirect</li>
+<li><code>POST /uploads/&lt;name&gt;</code> &mdash; file upload</li>
+<li><code>DELETE /uploads/&lt;name&gt;</code> &mdash; file delete</li>
+<li><a href="/cgi-bin/hello.py?name=webserv">/cgi-bin/hello.py</a> &mdash; CGI</li>
+<li><a href="/does-not-exist">/does-not-exist</a> &mdash; custom 404 page</li>
+<li><a href="/crew/">/crew/</a>&mdash; 42 crew</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>42 Crew :D</title>
+<style>
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        font-family: -apple-system, "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #1e1b4b, #0f172a 60%);
+        color: #f1f5f9;
+        padding: 3rem 1.5rem;
+    }
+    h1 {
+        margin: 0;
+        font-size: clamp(1.6rem, 4vw, 2.4rem);
+        text-align: center;
+    }
+    h1 span { display: inline-block; animation: wiggle 1.6s ease-in-out infinite; }
+    @keyframes wiggle {
+        0%, 100% { transform: rotate(-4deg); }
+        50% { transform: rotate(4deg); }
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .card {
+        width: 230px;
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 20px;
+        padding: 1.2rem;
+        text-align: center;
+        backdrop-filter: blur(6px);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        cursor: default;
+    }
+    .card:hover {
+        transform: translateY(-10px) rotate(-1deg) scale(1.03);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .card img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 14px;
+        border: 3px solid rgba(255,255,255,0.2);
+    }
+    .card h2 {
+        margin: 0.9rem 0 0.3rem;
+        font-size: 1.15rem;
+    }
+    .card p {
+        margin: 0;
+        font-size: 0.88rem;
+        color: #cbd5e1;
+        line-height: 1.4;
+    }
+    .badge {
+        display: inline-block;
+        margin-top: 0.6rem;
+        font-size: 0.72rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 999px;
+        background: rgba(129, 140, 248, 0.25);
+        color: #c7d2fe;
+    }
+    footer {
+        font-size: 0.8rem;
+        color: #64748b;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+    <h1><span>⚡</span> The 3 Heroes of webserv <span>⚡</span></h1>
+
+    <div class="cards">
+        <div class="card">
+            <img src="merilhan.png" alt="merilhan">
+            <h2>Mertilhan</h2>
+            <p>He talks to SIGCHLD every day so the CGI does not crash. He prays after every fork.</p>
+            <span class="badge">CGI Master ⚡</span>
+        </div>
+        <div class="card">
+            <img src="tuzan.jpeg" alt="tuzan">
+            <h2>Tuzan</h2>
+            <p>He finds the segfault before his coffee is finished. He is the one who invented "it worked on my machine".</p>
+            <span class="badge">Coffee ☕ & Debug</span>
+        </div>
+        <div class="card">
+            <img src="husarpka.jpeg" alt="husarpka">
+            <h2>Husarpka</h2>
+            <p>You cannot tell if his eyes are purple from the screen light or from no sleep. He is the legend who commits at 3 AM.</p>
+            <span class="badge">Night Shift 🌙</span>
+        </div>
+    </div>
+
+    <footer>© 2026 — no CGI process became a zombie while we made this page 🫡</footer>
+
+</body>
+</html>
